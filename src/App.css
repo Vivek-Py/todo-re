@@ -1,38 +1,104 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Train+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap');
+
+:root {
+  --primary-color: #4b778d;
+  --secondary-color: #28b5b5;
+  --complementary-color: #8fd9a8;
+  --supplementary-color: #d2e69c;
+  --heading-font: 'Train One', cursive;
+  --para-font: 'Amaranth', sans-serif;
+  --heading-size: 40px;
+  --text-size: 20px;
+}
+
+input, button {
+  font-family: var(--para-font);
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+input {
+  padding-left: 10px;
+}
+
+li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.base {
+  margin: auto;
+  padding: 0;
+}
+
+.main-container {
+  width: 90%;
+  height: 98vh;
+  background-color: var(--supplementary-color);
+  border-radius: 8px;
+}
+
+.app-header {
   text-align: center;
+  font-family: var(--heading-font);
+  font-size: var(--heading-size);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-div {
+  width: 90%;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.task-container {
+  margin-top: 35px;
+  list-style: none;
+  width: 60%;
+  text-align: center;
+  font-family: var(--para-font);
+  font-size: 19px;
+}
+
+.singular-task {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.delete-btn {
+  background-color: var(--supplementary-color);
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+button:hover {
+  background-color: var(--complementary-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    width: 40%;
+    height: 98vh;
+    background-color: var(--supplementary-color);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 720px) {
+  .main-container {
+    width: 80%;
+    height: 98vh;
+    background-color: var(--supplementary-color);
   }
 }
+
+@media screen and (max-width: 540px) {
+  .main-container {
+    width: 90%;
+    height: 98vh;
+    background-color: var(--supplementary-color);
+  }
+}
+
