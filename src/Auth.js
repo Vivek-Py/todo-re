@@ -17,24 +17,26 @@ const Auth = (props) => {
 
   return (
     <section className="login">
-      <div className="loginContainer">
-        <label>Username</label>
-        <input
+      <div className="loginContainer shadow">
+        <label className="base">Username</label>
+        <input className="base"
           type="text"
           autoFocus
           required
           value={email}
+          placeholder="test@email.com"
           onChange={(event) => {
             setEmail(event.target.value);
           }}
         />
         <p className="errorMsg">{emailError}</p>
-        <label>Password</label>
-        <input
+        <label className="base">Password</label>
+        <input className="base"
           type="text"
           autoFocus
           required
           value={password}
+          placeholder="testPassword"
           onChange={(event) => {
             setPassword(event.target.value);
           }}

@@ -1,110 +1,69 @@
-label {
-    color: #3a2b58 !important;
+body {
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.signio {
-  border: none;
-  outline: none;
+input, label {
+  display: block;
+  margin-bottom: 8px !important;
+  margin-top: 8px !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ input {
+   height: 4vh;
+ }
+
+button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 4vh;
+  width: 10vh;
+  margin: 7px 0px;
+}
+
+span {
+  color: #4b778d;
+}
+
+button:hover {
+  background-color: #d2e69c;
+}
+
+span:hover {
+  background-color: #d2e69c;
+}
+
+.simpleCont {
   width: 100%;
-  padding: 15px 0;
-  font-size: 16px;
-  letter-spacing: 1px;
-  background: #d2e69c;
-  cursor: pointer;
+}
+
+.base {
+  margin: auto;
+  text-align: center;
 }
 
 .login {
-  width: 100%;
-  min-height: 98vh;
-  display: flex;
-}
-
-.login .loginContainer {
-  padding: 60px;
   margin: auto;
+  height: 98vh;
   width: 100%;
-  max-width: 520px;
-  min-height: 600px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  background-color: #8fd9a8;
-}
-
-.login .loginContainer label {
-  color: white;
-  margin: 14px 0;
-  display: block;
-  font-size: 22px;
-  line-height: 1;
-}
-
-.login .loginContainer input {
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 19px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.login .loginContainer .btnContainer {
-  width: 100%;
-  padding: 24px 0;
-}
-
-.login .loginContainer .btnContainer p {
-  margin: 14px 0 0 0;
-  text-align: right;
-  color: #fff;
-}
-
-.login .loginContainer .btnContainer p span {
-  color: yellow;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  margin-left: 5px;
-  cursor: pointer;
-  transition: all 400ms ease-in-out;
-}
-
-.login .loginContainer .btnContainer p span:hover {
-  color: red;
-}
-
-.login .loginContainer .errorMsg {
-  color: red;
-  font-size: 16px;
-}
-
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  background: radial-gradient(
-    ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
-  );
-}
-
-.hero nav {
-  background: #603bbb;
-  width: 100%;
-  padding: 20px 40px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.hero nav h2 {
-  color: #fff;
+.loginContainer {
+  width: 350px;
+  background-color: #d2e69c;
+  border-radius: 9px;
+  margin: auto;
 }
 
-.hero nav button {
-  width: 86px;
-  padding: 8px 0;
-  background: #3a2b58;
+.btnContainer {
+  text-align: center;
 }
+
+.shadow {
+  -webkit-box-shadow: 1px 1px 7px 4px #bbc79b; 
+  -moz-box-shadow:    1px 1px 7px 4px #bbc79b;  
+  box-shadow:         1px 1px 7px 4px #bbc79b;
+}
+
