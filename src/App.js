@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import firebase from "firebase";
 import fire from "./Connect";
 import TaskList from "./TaskList";
-import Auth from "./Auth";
+import Auth from "./Auth"
 
 const db = fire.firestore();
 
@@ -115,6 +115,12 @@ function App() {
       {user ? (
         <div className="main-container base">
           <header className="app-header base">Simply Todo</header>
+
+          <div className="logout-container">
+            <span className="logout-btn" onClick={handleLogout}>
+              Log Out?
+            </span>
+          </div>
 
           <div className="input-div base">
             <input

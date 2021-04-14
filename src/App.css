@@ -19,6 +19,10 @@ input, button {
   border-radius: 5px;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 input {
   padding-left: 10px;
 }
@@ -29,21 +33,38 @@ li {
 }
 
 .base {
-  margin: auto;
+  margin: 0px auto 0px auto;
   padding: 0;
 }
 
 .main-container {
   width: 90%;
-  height: 98vh;
+  height: 100%;
   background-color: var(--supplementary-color);
   border-radius: 8px;
+  padding-bottom: 10px;
 }
 
 .app-header {
   text-align: center;
   font-family: var(--heading-font);
   font-size: var(--heading-size);
+}
+
+.logout-container {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.logout-btn {
+  text-decoration-style: dashed;
+  text-decoration: underline;
+}
+
+.logout-btn:hover {
+  cursor: pointer;
+  font-size: large;
 }
 
 .input-div {
@@ -61,6 +82,7 @@ li {
   text-align: center;
   font-family: var(--para-font);
   font-size: 18px;
+  height: 100%;
 }
 
 .singular-task {
@@ -92,7 +114,7 @@ button:hover {
 @media screen and (min-width: 1200px) {
   .main-container {
     width: 40%;
-    height: 98vh;
+    height: 100%;
     background-color: var(--supplementary-color);
   }
 }
@@ -100,7 +122,7 @@ button:hover {
 @media screen and (max-width: 720px) {
   .main-container {
     width: 80%;
-    height: 98vh;
+    height: 100%;
     background-color: var(--supplementary-color);
   }
 }
@@ -108,7 +130,7 @@ button:hover {
 @media screen and (max-width: 540px) {
   .main-container {
     width: 90%;
-    height: 98vh;
+    height: 100%;
     background-color: var(--supplementary-color);
   }
 }

@@ -18,8 +18,8 @@ const Auth = (props) => {
   return (
     <section className="login">
       <div className="loginContainer shadow">
-        <label className="base">Username</label>
-        <input className="base"
+        <label className="labelclass baselogin">Username</label>
+        <input className="inputclass baselogin"
           type="text"
           autoFocus
           required
@@ -30,8 +30,8 @@ const Auth = (props) => {
           }}
         />
         <p className="errorMsg">{emailError}</p>
-        <label className="base">Password</label>
-        <input className="base"
+        <label className="labelclass baselogin">Password</label>
+        <input className="inputclass baselogin"
           type="text"
           autoFocus
           required

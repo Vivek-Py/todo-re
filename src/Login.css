@@ -1,24 +1,24 @@
-body {
-  overflow: hidden;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-input, label {
-  display: block;
-  margin-bottom: 8px !important;
-  margin-top: 8px !important;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
- input {
-   height: 4vh;
- }
-
-button {
+ .signio {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   height: 4vh;
   width: 10vh;
   margin: 7px 0px;
-}
+ }
+
+ .inputclass {
+  display: block;
+  margin-bottom: 8px !important;
+  margin-top: 8px !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 4vh;
+ }
+
+ .labelclass {
+  display: block;
+  margin-bottom: 8px !important;
+  margin-top: 8px !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
 
 span {
   color: #4b778d;
@@ -29,7 +29,7 @@ p {
   color: red;
 }
 
-button:hover {
+.signio:hover {
   background-color: #d2e69c;
 }
 
@@ -41,8 +41,8 @@ span:hover {
   width: 100%;
 }
 
-.base {
-  margin: auto;
+.baselogin {
+  margin: 0px auto 0px auto;
   text-align: center;
 }
 
