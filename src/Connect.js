@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const fire = firebase.initializeApp({
-    apiKey: "AIzaSyDR-A5NvERSC70gKlmbkA8HWeFLjVO0oGU",
-    authDomain: "todo-23f22.firebaseapp.com",
-    projectId: "todo-23f22",
-    storageBucket: "todo-23f22.appspot.com",
-    messagingSenderId: "727770861891",
-    appId: "1:727770861891:web:ce4b0d75549901b39ddff6"
+    apiKey: "AIzaSyAQTwxBwljEvOgd9x8UmyckVncmywDrtkg",
+    authDomain: "simply-todo.firebaseapp.com",
+    projectId: "simply-todo",
+    storageBucket: "simply-todo.appspot.com",
+    messagingSenderId: "470587892630",
+    appId: "1:470587892630:web:c2b520faa126248f8fb3b7"
 })
 
 export default fire
