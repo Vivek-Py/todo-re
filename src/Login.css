@@ -24,6 +24,11 @@ span {
   color: #4b778d;
 }
 
+p {
+  text-align: center;
+  color: red;
+}
+
 button:hover {
   background-color: #d2e69c;
 }
@@ -52,7 +57,7 @@ span:hover {
 
 .loginContainer {
   width: 350px;
-  background-color: #d2e69c;
+  background: radial-gradient( #d2e69c, #c4e270);
   border-radius: 9px;
   margin: auto;
 }

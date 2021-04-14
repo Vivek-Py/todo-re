@@ -8,7 +8,6 @@ import Auth from "./Auth";
 const db = fire.firestore();
 
 function App() {
-
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +18,6 @@ function App() {
   const [Input, setInput] = useState("");
 
   var Check = "Incomplete";
-
 
   const clearInput = () => {
     setEmail("");
@@ -114,49 +112,43 @@ function App() {
 
   return (
     <div>
+      {user ? (
+        <div className="main-container base">
+          <header className="app-header base">Simply Todo</header>
 
-      {
-        user ? (
+          <div className="input-div base">
+            <input
+              id="inputbox"
+              className="input-box"
+              type="text"
+              onChange={(event) => setInput(event.target.value)}
+            />
+            <button type="submit" disabled={!Input} onClick={addTask}>
+              Add Task
+            </button>
+          </div>
 
-          <div className="main-container base">
-        <header className="app-header base">Simply Todo</header>
-
-        <div className="input-div base">
-          <input
-            id="inputbox"
-            className="input-box"
-            type="text"
-            onChange={(event) => setInput(event.target.value)}
-          />
-          <button type="submit" disabled={!Input} onClick={addTask}>
-            Add Task
-          </button>
+          <div className="task-container base">
+            {Task.map((todo) => (
+              <TaskList name={todo} />
+            ))}
+          </div>
         </div>
-
-        <div className="task-container base">
-          {Task.map((todo) => (
-            <TaskList name={todo} />
-          ))}
-        </div>
-      </div>
-
-        ) : (
-          <Auth 
-        email = {email}
-        setEmail = {setEmail}
-        password = {password}
-        setPassword = {setPassword}
-        hadnleLogin = {hadnleLogin}
-        handleLogout = {handleLogout}
-        hasAccount = {hasAccount}
-        setHasAccount = {setHasAccount}
-        emailError = {emailError}
-        passwordError = {passwordError}
-        hadnleSignup = {hadnleSignup}
-      />
-        )
-      }
-
+      ) : (
+        <Auth
+          email={email}
+          setEmail={setEmail}
+          password={password}
+          setPassword={setPassword}
+          hadnleLogin={hadnleLogin}
+          handleLogout={handleLogout}
+          hasAccount={hasAccount}
+          setHasAccount={setHasAccount}
+          emailError={emailError}
+          passwordError={passwordError}
+          hadnleSignup={hadnleSignup}
+        />
+      )}
     </div>
   );
 }
