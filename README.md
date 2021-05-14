@@ -1,6 +1,6 @@
 # Todo
 
-This app lets you create TODOs if you've an account. It's completely open-source and free-to-use. Here are someof the images of the app:
+This app lets you create TODOs if you've an account. It's completely open-source and free-to-use. Here are some of the images of the app:
 
 <p align="center">
 <img src="./img/log.jpg" width="200">
