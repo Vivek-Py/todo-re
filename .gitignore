@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# custom
+/src/Connet.js
+/.firebase
+.firebaserc
+firebase.json
